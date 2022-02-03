@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+</head>
+<body>
+    <nav class = "nav nav-tabs">
+        <div class="nav-item">
+            <a class="nav-link active" data-bs-toggle="tab" href="./crearInsumo.html">Crear Insumo</a>
+        </div>
+        <div class="nav-item">
+            <a class="nav-link active" data-bs-toggle="tab" href="./crearExistencia.html">Añadir Existencia</a>
+        </div>
+        <div class="nav-item">
+            <a class="nav-link active" data-bs-toggle="tab" href="./buscarInsumo.html">Buscar Insumo</a>
+        </div>
+        <div class="nav-item">
+            <a class="nav-link active" data-bs-toggle="tab" href="./estadisticas.html">Estadisticas</a>
+        </div>
+    </nav>
+    <main class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 p-4 my-auto">
+                <form class="card card-body" id="formularioCrearExistencia">
+                    <div class="form-group my-1">
+                        <input id="codigo" type="text" placeholder="Codigo" class="form-control" autofocus>
+                    </div>
+                    <div class="form-group my-1">
+                        <input id="codigo_insumo" type="text" placeholder="Codigo insumo" class="form-control">
+                    </div>
+                    <div class="form-group my-1">
+                        <input id="cantidad" type="number" step="any" placeholder="Cantidad" class="form-control">
+                    </div>
+                    <div class="form-group my-1">
+                        <input id="fecha_ingreso" type="date" step="any" placeholder="Fecha de ingreso" class="form-control">
+                    </div>
+                    <div class="form-group my-1">
+                        <input id="fecha_vencimiento" type="date" step="any" placeholder="Fecha de vencimiento" class="form-control">
+                    </div>
+                    <button class="btn btn-primary mt-3">
+                        Añadir
+                    </button>
+                </form>
+            </div>
+    </main>
+
+    <asaid>
+        <div class="row">
+            <div class="col-md-6 p-4 my-auto">
+                <form class="card card-body">
+                    <div class="form-group">
+                        <input id="act_id" type="text" placeholder="ID" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input id="act_nombre" type="text" placeholder="Nombre" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input id="act_etiqueta" type="text" placeholder="Etiqueta" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input id="act_unidad" type="text" placeholder="Unidad" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input id="act_cantidad" type="number" step="any" placeholder="Cantidad" class="form-control">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </asaid>
+    <script src="./crearExistencia.js"></script>
+</body>
+</html>
